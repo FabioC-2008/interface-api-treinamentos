@@ -1,0 +1,10 @@
+{
+  "description": "Streamline training management with an intuitive interface that automates scheduling, tracking, and reporting for organizations and trainers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-bg: #070C18;
+  --color-card: #0D1528;
+  --color-muted-bg: #111E35;
+  --color-border: #1A2A44;
+  --color-primary: #00C896;
+  --color-primary-dim: #00C89620;
+  --color-text: #E2EAF4;
+  --color-muted: #5A7090;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-info: #3B82F6;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: #070C18;
+  font-family: 'Inter', sans-serif;
+  color: #E2EAF4;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+input, textarea {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.22s ease-out both;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.28s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
